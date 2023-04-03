@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nova Fonte";
+}
+html,body{
+	height: 100%;
+}
+@font-face{
+	src: url('../Fontes/Lobster-Regular.ttf');
+	font-family: "Nova Fonte";
+}
+.clear{
+	clear:both;
+}
+header{
+	width: 100%;
+	padding:20px;
+	/*background-color:#4c3282;*/
+	background-color: rgb(33,35,67);
+}
+header .logoSite{
+	width: 200px;
+	height: 25px;
+	background-image:url('../Imagens/logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	cursor: pointer;
+	float:left;
+}
+header .logoSite a{
+	padding:20% 50%;
+}
+header nav.desktop-menu{
+	float:right;
+}
+nav.desktop-menu ul li{
+	display: inline-block;
+	margin-right: 6px;
+}
+nav.desktop-menu ul li a{
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+.container-banner{
+	width: 100%;
+	height: 557px;
+	background-image: url('../Imagens/header_bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+/*.container-banner*/ .container{
+	width: 1200px;
+	max-width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+.container .containerList-banner{
+	width:45%;
+	max-width:600px;
+	float:left;
+	margin-top:100px;
+	margin-left: 30px;
+	padding: 20px 0px 15px 15px;
+	background-color: rgba(33,35,67,0.7);
+}
+.containerList-banner ul li{
+	font-size: 20px;
+	margin-bottom: 15px;
+	color: white;
+	font-style: italic;
+	list-style-position: inside;
+}
+.container .container-form{
+	width: 55%;
+	max-width: 400px;
+	height: calc(100% + 30px);
+	float: right;
+	margin-top: -15px;
+	border: 8px solid rgba(120, 120, 120, 0.7);
+	background-clip: content-box;
+	/*O conteúdo de .container-form começará entre as próprias bordas, não por baixo.*/
+	background-color: white;
+}
+.container-form  form{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+form h3{
+	margin-bottom: 20px;
+	font-size: 25px;
+	color: #999999;
+}
+form h4{
+	color: #999999;
+}
+form .camposForms{
+	width: 100%;
+	margin-bottom: 23px;
+}
+.camposForms label{
+	font-size: 18px;
+	color: #999999;
+}
+.camposForms input[type="text"]{
+	width: 100%;
+	height: 50px;
+	padding: 8px 0px 8px 6px;
+	/*remove borda dos input e textarea quando clicado*/
+	outline:0;
+	border: 2px solid #ccc;
+	font-size: 18px;
+	font-family:sans-serif;
+}
+form input[type="submit"]{
+	width: 200px;
+	font-size: 23px;
+	color: white;
+	background-color: rgb(33,35,67);
+	display: block;
+	margin: 30px auto 0px auto;
+	padding:6px;
+	border-top:1px solid gray;
+	cursor: pointer;
+}
+form input[type="submit"]:hover{
+	background-color: rgba(33,35,67,0.9);
+}
+.container-2{
+	width:100%;
+	padding:40px 0px 0px 0px;
+	background-color:#cfd4d1;
+}
+.container > img{
+	position: relative;
+	left:50%;
+	top:30px;
+	transform: translateX(-50%);
+}
+.container-2 .texto-container-2{
+	width: 100%;
+	text-align: center;
+}
+.texto-container-2 h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.texto-container-2 p{
+	width: 70%;
+	display: inline-block;
+	font-size: 19px;
+	text-align: justify;
+}
+.container-3{
+	width: 100%;
+	text-align: center;
+	padding:100px 0px;
+	color:#462663;
+}
+.container-3 h2{
+	margin-bottom: 60px;
+}
+.container-3 .miniTextos-container-3{
+	width: 100%;
+	display: flex;
+}
+.container .container-single{
+	width: 33.3%;
+	float: left;
+	padding: 0px 20px;
+}
+.container-single h4{
+	margin-top: 12px;
+}
+.container-single p{
+	text-align: justify;
+	margin-top: 8px;
+}
+footer{
+	width: 100%;
+	padding: 50px 0px;
+	border-top: 3px solid gray;
+	text-align: center;
+}
+footer p{
+	font-size: 20px;
+	color:#b2b8b5;
+	margin-bottom: 8px;
+}
+@media screen and (max-width:  992px){
+	.container .containerList-banner{
+		margin-top: 80px;
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width:  768px){
+	.container .containerList-banner{
+		display: none;
+	}
+	.container .container-form{
+		width: 100%;
+		max-width:none;
+		height: 100%;
+		float:none;
+		margin-top: -15px;
+		/*border: 8px solid rgba(120, 120, 120, 0.7);
+		background-clip: content-box;
+		O conteúdo de .container-form começará entre as próprias bordas, não por baixo.*/
+		background-color: white;
+	}
+	.texto-container-2 p{
+		width: 100%;
+		display: inline-block;
+		font-size: 17px;
+		text-align: justify;
+	}
+}
+@media screen and (max-width:  600px){
+	.container .container-single{
+		width: 100%;
+		float: none;
+		padding: 0px 20px;
+		margin-bottom: 50px;
+	}
+}
+@media screen and (max-width: 450px){
+	/*Quando o viewport atingir 440px, o menu deve ficar centralizado e abaixo da logo. */
+	header .logoSite{
+		width: 200px;
+		height: 25px;
+		background-image:url('../Imagens/logo.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		cursor: pointer;
+		float:none;
+		margin:0 auto;
+	}
+	header > nav.desktop-menu{
+		float:none;
+		display:block;
+		margin:10px auto 0px auto;
+		text-align:center;
+	}
+}
+@media screen and (max-width: 340px){
+	.container-form  form{
+		padding: 08px;
+	}
+}
